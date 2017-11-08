@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <!-- TODO: Change to vue.min.js in production-->
+    <script src="/vue/vue.js"></script>
+  </head>
+  <body>
+    <!-- TODO: this is a test app to make sure vue is running -->
+    <div id="app">
+        {{ message }}
+      </div>
+
+  </body>
+
+  <script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+        message: 'Hello Vue!'
+        }
+    })
+</script>
+  </html>
